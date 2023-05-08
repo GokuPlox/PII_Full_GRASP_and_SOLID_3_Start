@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    public enum Destination
+    /*public enum Destination
     {
         Console,
         File
@@ -27,5 +27,10 @@ namespace Full_GRASP_And_SOLID.Library
                 File.WriteAllText("Recipe.txt", recipe.GetTextToPrint());
             }
         }
+    }*/
+
+    public interface IPrinter 
+    {
+        void PrintRecipe(Recipe recipe);
     }
 }
